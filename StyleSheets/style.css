@@ -1,0 +1,31 @@
+/*
+Author: Jonathan Pingle
+Date Created: 20 March 2020
+File Discription: stylesheet
+File Type: css
+Additional Credit: Mozilla Developer Tutorials
+*/
+
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  font-size: 1em;
+}
+
+/* NAVIGATION BAR */
+
+#nav{
+  background: lightgrey;
+  overflow: auto;
+}
+
+#nav li{
+  float: left;
+  padding: 0.625em;
+}
+
+#nav li:hover{
+  background: grey;
+}
