@@ -6,6 +6,7 @@ File Type: css
 Additional Credit: Mozilla Developer Tutorials
 */
 
+/* GENERAL */
 html{
   font-family: 'Roboto', sans-serif;
 }
@@ -16,7 +17,8 @@ body{
 
 /* NAVIGATION BAR */
 
-#nav{
+.nav{
+  font-size: 90%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -24,13 +26,25 @@ body{
   overflow: auto;
 }
 
-#nav li{
-  display: block;
-  text-align: center;
+.nav li{
   float: left;
-  padding: 0.625em;
 }
 
-#nav li:hover{
+.nav a{
+  display: block;
+  text-align: center;
+  padding: 0.625em 1em;
+  border-right: 1px solid white;
+  color: black;
+  text-decoration: none;
+}
+
+.nav li:last-child{
+  float:right;
+  border-right:none;
+  border-left: 1px solid white;
+}
+
+.nav li:hover{
   background: grey;
 }
