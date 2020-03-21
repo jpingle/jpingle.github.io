@@ -6,28 +6,28 @@ File Type: css
 Additional Credit: Mozilla Developer Tutorials
 */
 
-/* GENERAL */
-html{
-  font-family: 'Roboto', sans-serif;
-}
+/* START 'GENERAL' */
+
+*{box-sizing: border-box;}
+
+html{font-family: 'Roboto Slab', serif;}
 
 body{
   font-size: 1em;
+  background: gainsboro;
 }
 
-/* NAVIGATION BAR */
+/* END 'GENERAL' */
+
+/* START 'NAVIGATION BAR' */
 
 .nav{
   font-size: 90%;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background: lightgrey;
+  background: silver;
   overflow: auto;
-}
-
-.nav li{
-  float: left;
 }
 
 .nav a{
@@ -39,6 +39,14 @@ body{
   text-decoration: none;
 }
 
+.nav li{
+  float: left;
+  font-family: 'Roboto Slab', sans-serif;
+}
+.nav li:first-child{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
 .nav li:last-child{
   float:right;
   border-right:none;
@@ -48,3 +56,53 @@ body{
 .nav li:hover{
   background: grey;
 }
+
+.nav li:first-child:hover{
+  background: silver;
+}
+/* END' NAVIGATION BAR' */
+
+/* START 'LAYOUT' */
+.left-col{
+  float:left;
+  width:80%;
+  background-color: gainsboro;
+}
+
+.right-col{
+  float:left;
+  width:20%;
+  padding-left: 1em;
+  background-color: gainsboro;
+}
+/* START 'BOARD' */
+.board{
+  background:white;
+  margin-top: 1em;
+  padding: 1em 2em;
+  line-height: 0.8em;
+}
+.board h2{font-size: large;}
+.board h6{font-size: small;}
+.board p{font-size: x-small;}
+/* END 'BOARD' */
+
+/* START 'SIDEBOARD' */
+.sideboard{
+  background:white;
+  margin-top: 1em;
+  padding: 1em 2em;
+}
+.sideboard h2{font-size: small;}
+.sideboard h6{font-size: x-small;}
+.sideboard p{font-size: xx-small;}
+
+/* END 'SIDEBOARD' */
+/*#######################*/
+
+.content:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* END 'LAYOUT' */
