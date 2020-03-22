@@ -17,6 +17,9 @@ body{
   background: gainsboro;
 }
 
+h2{font-size: large;}
+h6{font-size: medium;}
+p{font-size: x-small;}
 /* END 'GENERAL' */
 
 /* START 'NAVIGATION BAR' */
@@ -49,8 +52,11 @@ body{
 }
 .nav li:last-child{
   float:right;
-  border-right:none;
   border-left: 1px solid white;
+}
+
+.nav li:last-of-type a{
+  border-right:none;
 }
 
 .nav li:hover{
@@ -82,9 +88,6 @@ body{
   padding: 1em 2em;
   line-height: 0.8em;
 }
-.board h2{font-size: large;}
-.board h6{font-size: small;}
-.board p{font-size: x-small;}
 /* END 'BOARD' */
 
 /* START 'SIDEBOARD' */
@@ -104,5 +107,27 @@ body{
   content: "";
   display: table;
   clear: both;
+}
+
+.footer{
+  text-align: center;
+}
+
+.footer p{
+  font-size: 0.75em;
+}
+
+.footer p:last-child{
+  margin-top: -0.75em;
+}
+
+hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
 }
 /* END 'LAYOUT' */
